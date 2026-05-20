@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "186780311890",
+    "project_id": "flutterxauth",
+    "storage_bucket": "flutterxauth.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186780311890:android:e351e7029ef53dce651a8b",
+        "android_client_info": {
+          "package_name": "com.example.konferensi_suhu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUTlqyKaprEgiBpicTJFwBzVEL_Gdr6vw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

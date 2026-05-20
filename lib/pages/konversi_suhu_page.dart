@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
+import '../blocs/auth/auth_bloc.dart';
 import '../providers/suhu_provider.dart';
 
 class KonversiSuhuPage extends StatelessWidget {
@@ -32,6 +34,15 @@ class KonversiSuhuPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Aplikasi Konversi Suhu"),
         centerTitle: true,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.logout),
+            tooltip: 'Logout',
+            onPressed: () {
+              context.read<AuthBloc>().add(AuthSignOutRequested());
+            },
+          ),
+        ],
       ),
 
       body: Padding(
